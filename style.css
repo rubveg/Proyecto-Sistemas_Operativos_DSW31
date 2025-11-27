@@ -1,88 +1,141 @@
-/* Estilos generales */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f4f4;
+/* Reset suave */
+* {
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Títulos */
+/* Fondo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e9f5ee, #d2e7db);
+    padding: 40px 20px;
+}
+
+/* Títulos principales */
 h2 {
     text-align: center;
-    color: #333;
+    color: #0a4f32;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-/* Contenedor centrado */
-form, table {
-    background: white;
-    padding: 20px;
-    margin: 0 auto;
-    width: 350px;
-    border-radius: 6px;
-    box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+/* Contenedor del formulario */
+form {
+    background: #ffffff;
+    padding: 25px;
+    width: 380px;
+    margin: 0 auto 30px auto;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    border-left: 5px solid #0a6b2e;
 }
 
-/* Inputs del formulario */
+/* Etiquetas */
+label {
+    font-weight: bold;
+    color: #0a4f32;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Inputs */
 input[type="text"],
 input[type="number"] {
-    width: 96%;
-    padding: 8px;
-    margin-top: 4px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #b7d1c3;
+    background-color: #f8fcfa;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Botón principal */
+/* Input animaciones */
+input:focus {
+    border-color: #0a6b2e;
+    box-shadow: 0 0 8px rgba(10,107,46,0.3);
+    outline: none;
+}
+
+/* Botón */
 button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background: #0a6b2e;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 button:hover {
-    background: #085425;
+    background: #06441e;
+    transform: scale(1.02);
 }
 
-/* Link para ver lista */
+/* Links */
 a {
-    text-decoration: none;
     color: #0a6b2e;
     font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.3s;
 }
 
 a:hover {
-    color: #06441e;
+    color: #052b13;
+    transform: scale(1.05);
 }
 
-/* Tabla de registros */
+/* TABLA */
+
 table {
-    width: 90%;
-    max-width: 700px;
+    width: 95%;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
 }
 
+/* Encabezado */
 table th {
     background: #0a6b2e;
     color: white;
-    padding: 10px;
+    padding: 14px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
 }
 
+/* Filas */
 table td {
-    border-bottom: 1px solid #ddd;
-    padding: 8px;
+    padding: 12px;
     text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+/* Alternar colores */
+table tr:nth-child(even) {
+    background-color: #f4faf6;
 }
 
 /* Botón eliminar */
 table a {
-    color: red;
+    color: #cc0000;
     font-weight: bold;
+    transition: 0.2s;
 }
 
 table a:hover {
-    color: darkred;
+    color: #7a0000;
+    text-decoration: underline;
 }
