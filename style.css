@@ -1,0 +1,88 @@
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Contenedor centrado */
+form, table {
+    background: white;
+    padding: 20px;
+    margin: 0 auto;
+    width: 350px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Inputs del formulario */
+input[type="text"],
+input[type="number"] {
+    width: 96%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Botón principal */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #0a6b2e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #085425;
+}
+
+/* Link para ver lista */
+a {
+    text-decoration: none;
+    color: #0a6b2e;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #06441e;
+}
+
+/* Tabla de registros */
+table {
+    width: 90%;
+    max-width: 700px;
+}
+
+table th {
+    background: #0a6b2e;
+    color: white;
+    padding: 10px;
+}
+
+table td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Botón eliminar */
+table a {
+    color: red;
+    font-weight: bold;
+}
+
+table a:hover {
+    color: darkred;
+}
